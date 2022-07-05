@@ -11,8 +11,29 @@ app.use(express.json());
 
 //create a todo
 
+app.post("/todos", async (req, res) => {
+  try {
+    const { description } = (req.body);
+    const newTodo = await pool.querry("INSERT INTO list (description) VALLUES($2)",
+      [description]
+    );
+
+    res.json(newTodo)
+  } catch (err) {
+    console.error(err.message);
+  }
+})
+
 //get all todos
 
+app.get("/todos", async (reg, res) => {
+  try {
+    const allTodos = await pool.query("SELECT * FROM list")
+    res.json(allTodos.rows)
+  } catch (err) {
+    console.error(err.message)
+  }
+})
 //get a todo
 
 //update todo
