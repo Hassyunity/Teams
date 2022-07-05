@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { MDBDataTable } from 'mdbreact';
 const DatatablePage = () => {
   // const [datafaker, setDataFaker] = useEffect([]);
@@ -66,7 +66,7 @@ const DatatablePage = () => {
         id: 1,
         name: 'Tiger Nixon',
         position: 'System Architect',
-       
+
         age: '61',
         date: '2011/04/25',
         todo: 'test'
@@ -139,7 +139,7 @@ const DatatablePage = () => {
   };
 
   return (
-    
+
     <MDBDataTable
       scrollY
       maxHeight="20vh"
@@ -148,10 +148,10 @@ const DatatablePage = () => {
       small
       data={data}
     />
-    
-      
+
+
   );
-  
+
 }
 
 

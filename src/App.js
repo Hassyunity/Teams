@@ -4,19 +4,20 @@ import './App.css';
 
 import DatatablePage from './components/Table';
 import TodoList from './components/TodoList';
-
+// import MyForm from './components/Post';
 
 
 
 function App() {
   return (
-    
+
     <div className="App">
-     <Navbar />
+      <Navbar />
       <TodoList />
       <DatatablePage />
+      {/* <MyForm /> */}
     </div>
-    
+
   );
 }
 
