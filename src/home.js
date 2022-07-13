@@ -10,7 +10,7 @@ import Teams from './pages/team';
 import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
 
-function App() {
+function Appp() {
   return (
     <Router>
       <Navbar />
@@ -27,7 +27,7 @@ function App() {
   );
 }
 
-export default App;
+export default Appp;
 
 
 // import React from 'react';

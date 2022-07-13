@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Appp from "../../home";
 
 const BasicForm = () => {
   const [email, setEmail] = useState("");
@@ -41,6 +42,7 @@ const BasicForm = () => {
               <div className="showDataStyle">
                 <p>{curElem.email}</p>
                 <p>{curElem.password}</p>
+                <Appp />
               </div>
             )
           })
