@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Team.css';
 
 class Teams extends React.Component {
 
@@ -30,7 +30,7 @@ class Teams extends React.Component {
     if (!DataisLoaded) return <div>
       <h1> Pleses wait some time.... </h1> </div>;
     return (
-      <div
+      <div 
         style={{
           display: 'flex',
           justifyContent: 'Left',
@@ -38,7 +38,7 @@ class Teams extends React.Component {
           height: '100vh'
         }}
       >
-        <div>
+        <div className = "App">
           <h1>Welcome to GeeksforGeeks Team</h1>
           <h1> Fetch data from an api in react </h1>
         </div>
