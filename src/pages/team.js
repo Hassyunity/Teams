@@ -1,18 +1,59 @@
 import React from 'react';
 
-const Teams = () => {
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Left',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>Welcome to GeeksforGeeks Team</h1>
-    </div>
-  );
-};
 
+class Teams extends React.Component {
+
+  //  Constructor
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      items: [],
+      DataisLoaded: false
+    };
+  }
+
+  // ComponentDidMount is used to
+  componentDidMount() {
+    fetch(
+      "https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((json) => {
+        this.setState({
+          items: json,
+          DataisLoaded: true
+        });
+      })
+  }
+  render() {
+    const { DataisLoaded, items } = this.state;
+    if (!DataisLoaded) return <div>
+      <h1> Pleses wait some time.... </h1> </div>;
+    return (
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'Left',
+          alignItems: 'Right',
+          height: '100vh'
+        }}
+      >
+        <div>
+          <h1>Welcome to GeeksforGeeks Team</h1>
+          <h1> Fetch data from an api in react </h1>
+        </div>
+        {
+          items.map((item) => (
+            <ol key={item.id} >
+              User_Name: {item.username},
+              Full_Name: {item.name},
+              User_Email: {item.email}
+            </ol>
+          ))
+        }
+
+      </div >
+    );
+  }
+}
 export default Teams;
