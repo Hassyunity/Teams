@@ -27,6 +27,7 @@ class Teams extends React.Component {
   }
   render() {
     const { DataisLoaded, items } = this.state;
+    
     if (!DataisLoaded) return <div>
       <h1> Pleses wait some time.... </h1> </div>;
     return (
@@ -39,19 +40,30 @@ class Teams extends React.Component {
         }}
       >
         <div className = "App">
-          <h1>Welcome to GeeksforGeeks Team</h1>
-          <h1> Fetch data from an api in react </h1>
         </div>
-        {
-          items.map((item) => (
-            <ol key={item.id} >
-              User_Name: {item.username},
-              Full_Name: {item.name},
-              User_Email: {item.email}
-            </ol>
-          ))
-        }
-
+          <>
+            <table>
+              <tr>
+                <th></th>
+                <th id = "title">Fetch data from an externel api</th>
+                <th></th>
+              </tr>
+              <tr>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+              {items.map((item) => {
+                return (
+                  <tr key={item.id}>
+                    <td>{item.username}</td>
+                    <td>{item.name}</td>
+                    <td>{item.email}</td>
+                  </tr>
+                )
+              })}
+            </table>
+          </>
       </div >
     );
   }
