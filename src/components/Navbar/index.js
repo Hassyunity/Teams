@@ -21,8 +21,8 @@ const Navbar = () => {
           <NavLink to='/events' activeStyle>
             Events
           </NavLink>
-          <NavLink to='/annual' activeStyle>
-            Todo
+          <NavLink to='/todo' activeStyle>
+            Todos
           </NavLink>
           <NavLink to='/team' activeStyle>
             Teams

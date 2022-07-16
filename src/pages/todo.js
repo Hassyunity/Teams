@@ -1,6 +1,5 @@
 import React from 'react';
-
-const AnnualReport = () => {
+const TodoReport = () => {
   return (
     <div
       style={{
@@ -8,11 +7,10 @@ const AnnualReport = () => {
         justifyContent: 'Left',
         alignItems: 'Right',
         height: '100vh'
-      }}
+      }} className='todo-page'
     >
-      <h1>Annual Report</h1>
     </div>
   );
 };
 
-export default AnnualReport;
+export default TodoReport;
