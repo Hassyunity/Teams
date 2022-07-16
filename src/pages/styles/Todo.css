@@ -14,10 +14,10 @@ body {
   );
 }
 .todo-page {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: consider;
-  width: 520px;
+  width: 800px;
   min-height: 600px;
   background: #161a2b;
   text-align: center;
@@ -139,7 +139,7 @@ h1 {
 
 .delete-icon {
   margin-right: 5px;
-  color: #fff;
+  color: rgb(201, 15, 15);
 }
 
 .edit-icon {
