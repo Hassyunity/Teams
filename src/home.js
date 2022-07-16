@@ -9,6 +9,7 @@ import AnnualReport from './pages/annual';
 import Teams from './pages/team';
 import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
+import BasicForm from './components/forms/basicForm';
 
 function Appp() {
   return (
@@ -21,7 +22,7 @@ function Appp() {
         <Route path='/annual' component={AnnualReport} />
         <Route path='/team' component={Teams} />
         <Route path='/blogs' component={Blogs} />
-        <Route path='/sign-up' component={SignUp} />
+        <Route path='/sign-up' component={BasicForm} />
       </Switch>
     </Router>
   );
