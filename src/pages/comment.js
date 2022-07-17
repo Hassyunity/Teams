@@ -1,0 +1,11 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import Blogs from "./blogs";
+import "./styles/Comment.css";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Blogs />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
