@@ -1,5 +1,5 @@
 import React from 'react';
-import './Team.css';
+import './styles/Team.css';
 
 class Teams extends React.Component {
 
@@ -29,7 +29,7 @@ class Teams extends React.Component {
     const { DataisLoaded, items } = this.state;
     
     if (!DataisLoaded) return <div>
-      <h1> Pleses wait some time.... </h1> </div>;
+      <h1> Pleases wait some time.... </h1> </div>;
     return (
       <div 
         style={{

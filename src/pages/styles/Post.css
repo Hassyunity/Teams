@@ -1,0 +1,111 @@
+.posts {
+    flex-direction: column;
+    justify-content: consider;
+    width: 800px;
+    min-height: 1200px;
+    background: #161A2B;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+  
+  .posts-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .posts-container {
+    margin-top: 40px;
+  }
+  
+  .post-form-title {
+    font-size: 22px;
+    color: aqua;
+  }
+  
+  .post-form-textarea {
+    width: 90%;
+    height: 80px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-top: 8px;
+    border: 2px solid rgb(107, 114, 12);
+  }
+  
+  .post-form-button {
+    font-size: 16px;
+    padding: 8px 16px;
+    background: rgb(59, 130, 246);
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .post-form-button:hover:enabled {
+    cursor: pointer;
+    background: rgb(37, 99, 235);
+  }
+  
+  .post-form-button:disabled {
+    opacity: 0.7;
+    cursor: default;
+  }
+  
+  .post-form-cancel-button {
+    margin-left: 10px;
+  }
+  
+  .post {
+    display: flex;
+    margin-bottom: 28px;
+  }
+  
+  .post-image-container {
+    margin-right: 12px;
+  }
+  
+  .post-image-container img {
+    border-radius: 50px;
+  }
+  
+  .post-right-part {
+    width: 100%;
+  }
+  
+  .post-content {
+    display: flex;
+    color: #4EF2D4;
+  }
+  
+  .post-author {
+    margin-right: 8px;
+    font-size: 20px;
+    color: #4EF2D4;
+  }
+  
+  .post-text {
+    font-size: 18px;
+    color: #e3e9e8;
+  }
+  
+  .post-actions {
+    display: flex;
+    font-size: 14px;
+    color: #637EFB;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  
+  .post-action {
+    margin-right: 8px;
+  }
+  
+  .post-action:hover {
+    text-decoration: underline;
+  }
+  
+  .replies {
+    margin-top: 20px;
+  }
+
+  
