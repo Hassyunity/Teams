@@ -1,4 +1,4 @@
-export const getComments = async () => {
+export const getPosts = async () => {
     return [
       {
         id: "1",
@@ -19,7 +19,7 @@ export const getComments = async () => {
     ];
   };
   
-  export const createComment = async (text, parentId = null) => {
+  export const createPost = async (text, parentId = null) => {
     return {
       id: Math.random().toString(36).substr(2, 9),
       body: text,
@@ -30,10 +30,10 @@ export const getComments = async () => {
     };
   };
   
-  export const updateComment = async (text) => {
+  export const updatePost = async (text) => {
     return { text };
   };
   
-  export const deleteComment = async () => {
+  export const deletePost = async () => {
     return {};
   };

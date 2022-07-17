@@ -1,5 +1,5 @@
 import React from 'react';
-import Comments from "./comments/Comments";
+import Posts from "./posts/Posts";
 
 const Blogs = () => {
   return (
@@ -14,7 +14,7 @@ const Blogs = () => {
       
       {/* <h1>Welcome to GeeksforGeeks Blogs</h1>
       <h1>Hello monsterlessons</h1> */}
-      <Comments
+      <Posts
         currentUserId="1"
       />
     </div>
