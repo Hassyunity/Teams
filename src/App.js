@@ -9,6 +9,7 @@ import TodoReport from './pages/todo';
 import Teams from './pages/team';
 import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
+import Footer from './components/footer';
 // import Access from './pages/access';
 // import MyForm from './components/Post';
 // import MyForm from './components/Post';
@@ -26,6 +27,7 @@ function App() {
         <Route path='/blogs' component={Blogs} />
         <Route path='/sign-up' component={SignUp} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
