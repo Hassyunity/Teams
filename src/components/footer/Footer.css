@@ -3,7 +3,11 @@
     flex-direction: column;
     margin-bottom: 20px;
     font-weight: bold;
-    background: #4EF2D4;
+    background: linear-gradient(
+    90deg,
+    #7ac48cd7 30%,
+    rgb(64, 107, 124) 90%
+  );;
   }
   
   .footer-social-media {

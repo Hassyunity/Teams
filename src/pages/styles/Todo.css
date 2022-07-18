@@ -7,11 +7,7 @@ box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  );
+  background: #A7ACC4
 }
 .todo-page {
   /* display: flex; */
