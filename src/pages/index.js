@@ -11,7 +11,7 @@ const Home = () => {
       }}
     >
       <h1>Welcome to GeeksforGeeks</h1>
-    </div>
+  </div>
   );
 };
 
