@@ -1,8 +1,16 @@
 import React from "react"
 
-// export default function (props) 
+
 const Auth = () =>{
   return (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'Left',
+        alignItems: 'Right',
+        height: '100vh'
+      }}
+    >
     <div className="Auth-form-container">
       <form className="Auth-form">
         <div className="Auth-form-content">
@@ -33,6 +41,7 @@ const Auth = () =>{
           </p>
         </div>
       </form>
+    </div>
     </div>
   )
 }
