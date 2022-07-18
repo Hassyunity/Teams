@@ -9,6 +9,11 @@
     width: 100vw;
     height: 100vh;
   }
+
+  #sub {
+    background-color: rgb(0, 217, 255);
+    color: white;
+  }
   
   .Auth-form {
     width: 420px;
