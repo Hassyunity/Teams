@@ -3,6 +3,8 @@ import "./login.css"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Auth from "./Auth"
 
+import './pages/styles/Todo.css';
+
 function Log() {
   return (
     <Router>
