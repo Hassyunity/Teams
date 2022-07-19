@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import App from './App';
+import App from './App';
 import Log from './Login';
-// import Home from './pages';
 
 ReactDOM.render(
 <React.StrictMode>
-	{/* <Home /> */}
-	<Log />
+	<App />
+	{/* <Log /> */}
 </React.StrictMode>,
 document.getElementById('root')
 );
