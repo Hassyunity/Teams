@@ -9,8 +9,8 @@ const PostForm = ({
 }) => {
   const [text, setText] = useState(initialText);
   const isTextareaDisabled = text.length === 0;
-  const onSubmit = (event) => {
-    event.preventDefault();
+  const onSubmit = (chat) => {
+    chat.preventDefault();
     handleSubmit(text);
     setText("");
   };

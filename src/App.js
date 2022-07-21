@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
-import Events from './pages/events';
+import Chats from './pages/chats';
 import TodoReport from './pages/todo';
 import Teams from './pages/team';
 import Blogs from './pages/blogs';
@@ -25,7 +25,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
-        <Route path='/events' component={Events} />
+        <Route path='/chats' component={Chats} />
         <Route path='/todo' component={TodoReport} />
         <Route path='/team' component={Teams} />
         <Route path='/blogs' component={Blogs} />
