@@ -17,7 +17,7 @@ const Chats = () => {
       <div>
       <main>
       <button className={styles.primaryBtn} onClick={() => setIsOpen(true)}>
-        Open convesation
+      open the discussion
       </button>
       {isOpen && <Modal setIsOpen={setIsOpen} />}
     </main>
