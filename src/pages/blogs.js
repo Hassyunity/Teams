@@ -12,8 +12,6 @@ const Blogs = () => {
       }}
     >
       
-      {/* <h1>Welcome to GeeksforGeeks Blogs</h1>
-      <h1>Hello monsterlessons</h1> */}
       <Posts
         currentUserId="1"
       />
