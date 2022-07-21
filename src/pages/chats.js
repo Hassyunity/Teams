@@ -1,12 +1,10 @@
-import React from 'react';
-
-import Chatbot from 'react-chatbot-kit'
-import 'react-chatbot-kit/build/main.css'
-import config from '../components/chatbot/config.js';
-import MessageParser from '../components/chatbot/MessageParser.jsx';
-import ActionProvider from '../components/chatbot/ActionProvider.jsx';
+import React, { useState } from 'react';
+import 'react-chatbot-kit/build/main.css';
+import styles from "./styles/Event.module.css";
+import Modal from "../components/modal/Modal";
 
 const Chats = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div
       style={{
@@ -16,13 +14,13 @@ const Chats = () => {
         height: '100vh'
       }}
     >
-      <h1>Chats pages</h1>
       <div>
-      <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      />
+      <main>
+      <button className={styles.primaryBtn} onClick={() => setIsOpen(true)}>
+        Open convesation
+      </button>
+      {isOpen && <Modal setIsOpen={setIsOpen} />}
+    </main>
     </div>
     </div>
   );
