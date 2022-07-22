@@ -10,9 +10,6 @@ import Teams from './pages/team';
 import Blogs from './pages/blogs';
 import SignUp from './pages/signup';
 import Footer from './components/footer';
-// import Access from './pages/access';
-// import MyForm from './components/Post';
-// import MyForm from './components/Post';
 <>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
@@ -24,6 +21,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
+        <Route path='/home' exact component={Home} />
         <Route path='/about' component={About} />
         <Route path='/chats' component={Chats} />
         <Route path='/todo' component={TodoReport} />
