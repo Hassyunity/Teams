@@ -11,6 +11,8 @@ const Home = () => {
       }}
     >
       <h1>Welcome in Teams</h1>
+      
+
   </div>
   );
 };
