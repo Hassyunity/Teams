@@ -75,6 +75,10 @@
   .post-content {
     display: flex;
     color: #4EF2D4;
+    margin-bottom: 10px;
+
+
+    
   }
   
   .post-author {
@@ -86,6 +90,8 @@
   .post-text {
     font-size: 18px;
     color: #e3e9e8;
+    border: 2px solid #A7ACC4;
+    margin-right: 15px;
   }
   
   .post-actions {
