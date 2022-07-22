@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'react-chatbot-kit/build/main.css';
-import styles from "./styles/Event.module.css";
+import styles from "./styles/Chat.module.css";
 import Modal from "../components/modal/Modal";
 
 const Chats = () => {
