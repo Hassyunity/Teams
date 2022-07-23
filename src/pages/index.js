@@ -1,4 +1,6 @@
+
 import React from 'react';
+import Calendar from './calendar';
 
 const Home = () => {
   return (
@@ -11,7 +13,7 @@ const Home = () => {
       }}
     >
       <h1>Welcome in Teams</h1>
-      
+      <Calendar />
 
   </div>
   );
