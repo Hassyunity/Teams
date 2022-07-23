@@ -37,6 +37,15 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     }));
   };
 
+  const handleThanks = () => {
+    const botMessage = createChatBotMessage('You re welcome');
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, botMessage],
+    }));
+  };
+
   const handleDog = () => {
     const botMessage = createChatBotMessage(
       "Here's a nice dog picture for you!",
@@ -77,6 +86,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             handleBye,
             handleCat,
             handleQuestion,
+            handleThanks,
           },
         });
       })}

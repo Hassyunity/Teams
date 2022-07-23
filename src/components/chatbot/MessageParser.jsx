@@ -2,7 +2,7 @@ import React from 'react';
 
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
-    if (message.includes('i am')) {
+    if (message.includes('i am') || message.includes('my name is')) {
       actions.handleName();
     }
     if (message.includes('hello')) {
@@ -19,6 +19,9 @@ const MessageParser = ({ children, actions }) => {
       }
     if (message.includes('cat')) {
       actions.handleCat();
+    }
+    if (message.includes('thanks') || message.includes('thank you')) {
+      actions.handleThanks();
     }
   };
 
