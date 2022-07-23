@@ -12,7 +12,7 @@ const Calendar = () => {
             <div className="container">  
                 <div className="row title" style={{ marginTop: "20px" }} >  
                     <div class="col-sm-12 btn btn-info">  
-                        FullCalendar In React Application  
+                        Calendar  
                </div>  
                 </div>  
                 <FullCalendar  

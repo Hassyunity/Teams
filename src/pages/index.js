@@ -12,8 +12,14 @@ const Home = () => {
         height: '100vh'
       }}
     >
-      <h1>Welcome in Teams</h1>
-      <Calendar />
+      
+      <table>
+        <td>
+          <tr><h2>Welcome in Teams</h2></tr>
+          <tr> <Calendar /></tr>
+        </td>
+      </table>
+     
 
   </div>
   );
