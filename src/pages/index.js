@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/index.css'
 
 const Home = () => {
   return (
@@ -10,7 +11,13 @@ const Home = () => {
         height: '100vh'
       }}
     >
-      <h1>Welcome in Teams</h1>
+      <h1>
+        <a class="github-fork-ribbon"
+        title="Fork me on GitHub"
+        >
+          Welcome in Teams
+        </a>
+        </h1>
   </div>
   );
 };
