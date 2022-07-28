@@ -10,7 +10,7 @@ const About = () => {
         height: '100vh'
       }}
     >
-      <h1>About page.</h1>
+      <h1>Coming soon.</h1>
     </div>
   );
 };
