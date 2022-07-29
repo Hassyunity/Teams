@@ -11,6 +11,7 @@ const About = () => {
       }}
     >
       <h1>Coming soon.</h1>
+      <h2>RADO HASIMANANA Fetra Tsihoarana</h2>
     </div>
   );
 };

@@ -1,4 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import 'react-chatbot-kit/build/main.css';
+import styles from "../../pages/styles/Chat.module.css";
+import Modal from "../modal/Modal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import {
   Nav,
   NavLink,
@@ -9,6 +15,7 @@ import {
 } from './NavbarElements';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <Nav>
@@ -21,9 +28,9 @@ const Navbar = () => {
           <NavLink to='/about' activeStyle>
             About
           </NavLink>
-          <NavLink to='/chats' activeStyle>
+          {/* <NavLink to='/chats' activeStyle>
             Chats
-          </NavLink>
+          </NavLink> */}
           <NavLink to='/todo' activeStyle>
             Todos
           </NavLink>
@@ -36,10 +43,12 @@ const Navbar = () => {
           <NavLink to='/sign-up' activeStyle>
             Sign Up
           </NavLink>
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
+      <div className={styles.primaryBtn} onClick={() => setIsOpen(true)}>
+      <FontAwesomeIcon icon={faCommentDots} />
+      </div>
+      {isOpen && <Modal setIsOpen={setIsOpen} />}
           <NavBtnLink to='/signin'>Sign In</NavBtnLink>
         </NavBtn>
       </Nav>
